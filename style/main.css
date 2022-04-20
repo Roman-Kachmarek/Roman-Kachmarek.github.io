@@ -1,0 +1,1866 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  background-image: url(./pics/Background.png);
+  width: 1440px;
+  height: 700px;
+  margin: 0px auto;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 46px;
+}
+
+header nav .logo__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 24px;
+  font-style: normal;
+  margin-left: 248px;
+}
+
+header nav .button_pack {
+  margin-left: 568px;
+  margin-top: -5px;
+}
+
+header nav .button_pack__button_2 {
+  width: 90px;
+  height: 36px;
+  color: #ffffff;
+  background: none;
+  border-radius: 40px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  margin-top: -5px;
+  margin-left: -3px;
+}
+
+header nav .button_pack_active {
+  border: 2px solid #ffffff;
+}
+
+header nav .button_pack__button_1 {
+  width: 90px;
+  height: 36px;
+  color: #ffffff;
+  background: none;
+  border-radius: 40px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  border: none;
+  padding-left: 17px;
+}
+
+header .chapter {
+  width: 470px;
+  height: 122px;
+  color: #ffffff;
+  margin-left: 485px;
+  margin-top: 146px;
+}
+
+header .chapter__head {
+  font-size: 52px;
+  text-align: center;
+  font-family: "Montserrat";
+  line-height: 63px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+header .plot {
+  width: 396px;
+  height: 25px;
+  color: #f7f3f2;
+  margin-left: 522px;
+  margin-top: 32.5px;
+}
+
+header .plot__text {
+  font-size: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  text-align: center;
+  line-height: 24px;
+}
+
+header .button_3 {
+  width: 225px;
+  height: 40px;
+  color: #ffffff;
+  background-color: #ff4e50;
+  border-radius: 40px;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  margin-left: 608px;
+  margin-top: 33px;
+  padding-top: 5px;
+}
+
+main {
+  width: 941px;
+  height: 2299px;
+  margin-left: 250px;
+  margin: 92px auto;
+}
+
+main .how-works {
+  width: 940px;
+  height: 465px;
+}
+
+main .how-works__box__head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: #444444;
+  padding-left: 299px;
+  font-family: "Montserrat";
+}
+
+main .how-works__box__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 37px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .how-works__box__content .first-item {
+  background-image: url(./pics/step1.png);
+  width: 300px;
+  height: 400px;
+}
+
+main .how-works__box__content .first-item__button {
+  width: 70px;
+  height: 20px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  border-radius: 40px;
+  border: none;
+  background-color: #ff4e50;
+  font-family: "Montserrat";
+  line-height: 12px;
+  letter-spacing: 2px;
+  margin-top: 219px;
+  margin-left: 25px;
+  padding-top: 7px;
+  padding-left: 9px;
+}
+
+main .how-works__box__content .first-item__chapter {
+  width: 250px;
+  height: 58px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Montserrat";
+  line-height: 26px;
+  margin-top: 23px;
+  margin-left: 25px;
+}
+
+main .how-works__box__content .first-item__text {
+  width: 250px;
+  height: 57px;
+  color: #e3e3e3;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "Roboto";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+main .how-works__box__content .second-item {
+  width: 300px;
+  height: 400px;
+  background-image: url(./pics/step2.png);
+}
+
+main .how-works__box__content .second-item__button {
+  margin-top: 251px;
+  width: 70px;
+  height: 20px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  border-radius: 40px;
+  border: none;
+  background-color: #ff4e50;
+  font-family: "Montserrat";
+  line-height: 12px;
+  letter-spacing: 2px;
+  margin-left: 25px;
+  padding-top: 4px;
+  padding-left: 7px;
+}
+
+main .how-works__box__content .second-item__chapter {
+  width: 250px;
+  height: 58px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Montserrat";
+  line-height: 26px;
+  margin-top: 23px;
+  margin-left: 25px;
+}
+
+main .how-works__box__content .second-item__text {
+  width: 250px;
+  height: 57px;
+  color: #e3e3e3;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "Roboto";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: -27px;
+  margin-left: 25px;
+}
+
+main .how-works__box__content .third-item {
+  width: 300px;
+  height: 400px;
+  background-image: url(./pics/step3.png);
+}
+
+main .how-works__box__content .third-item__button {
+  width: 70px;
+  height: 20px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  border-radius: 40px;
+  border: none;
+  background-color: #ff4e50;
+  font-family: "Montserrat";
+  line-height: 12px;
+  letter-spacing: 2px;
+  margin-top: 219px;
+  margin-left: 25px;
+  padding-top: 7px;
+  padding-left: 9px;
+}
+
+main .how-works__box__content .third-item__chapter {
+  width: 250px;
+  height: 58px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Montserrat";
+  line-height: 26px;
+  margin-top: 23px;
+  margin-left: 25px;
+}
+
+main .how-works__box__content .third-item__text {
+  width: 250px;
+  height: 57px;
+  color: #e3e3e3;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "Roboto";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+main .meating {
+  width: 941px;
+  height: 361px;
+  margin-top: 95px;
+}
+
+main .meating__box {
+  width: 491px;
+  height: 32px;
+  color: #444444;
+  margin-left: 225px;
+  margin-top: -7px;
+}
+
+main .meating__box__head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  font-family: "Montserrat";
+  line-height: 32px;
+}
+
+main .meating__box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .meating__box2__article {
+  height: 266px;
+  width: 474px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .meating__box2__article .item-1, main .meating__box2__article .item-2 {
+  width: 221px;
+  height: 205px;
+  margin-top: 34px;
+}
+
+main .meating__box2__article .item-1__photo {
+  margin-left: 47px;
+}
+
+main .meating__box2__article .item-1__chapter {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Montserrat";
+  line-height: 17px;
+  margin-left: 55px;
+  margin-top: 8px;
+}
+
+main .meating__box2__article .item-1__plot {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Roboto";
+  margin-top: 23px;
+  color: #666666;
+}
+
+main .meating__box2__article .item-2__photo {
+  margin-left: 70px;
+}
+
+main .meating__box2__article .item-2__chapter {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Montserrat";
+  line-height: 17px;
+  margin-left: 77px;
+  margin-top: 17px;
+}
+
+main .meating__box2__article .item-2__plot {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  width: 221px;
+  height: 38px;
+  text-align: center;
+  font-family: "Roboto";
+  margin-left: 18px;
+  margin-top: 22px;
+  color: #666666;
+}
+
+main .meating__box2__article1 {
+  height: 266px;
+  width: 474px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .meating__box2__article1 .item-3, main .meating__box2__article1 .item-4 {
+  width: 242px;
+  height: 230px;
+  margin-top: 34px;
+}
+
+main .meating__box2__article1 .item-3__photo {
+  margin-left: 64px;
+}
+
+main .meating__box2__article1 .item-3__chapter {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Montserrat";
+  line-height: 17px;
+  margin-left: 80px;
+  margin-top: 17px;
+}
+
+main .meating__box2__article1 .item-3__plot {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  width: 221px;
+  height: 57px;
+  text-align: center;
+  font-family: "Roboto";
+  margin-left: 18px;
+  margin-top: 27px;
+  color: #666666;
+}
+
+main .meating__box2__article1 .item-4__photo {
+  margin-left: 65px;
+}
+
+main .meating__box2__article1 .item-4__chapter {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Montserrat";
+  line-height: 17px;
+  margin-left: 56px;
+  margin-top: 17px;
+}
+
+main .meating__box2__article1 .item-4__plot {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  width: 221px;
+  height: 57px;
+  text-align: center;
+  font-family: "Roboto";
+  margin-left: 14px;
+  margin-top: 27px;
+  color: #666666;
+}
+
+main .meating__box3 .button_4 {
+  width: 180px;
+  height: 40px;
+  color: #ff4e50;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Montserrat";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 40px;
+  border: 2px solid #ff4e50;
+  background: none;
+  margin-top: 29px;
+  margin-left: 381px;
+  padding-left: 11px;
+}
+
+main .holiday_activity {
+  width: 940px;
+  height: 1036px;
+  margin-top: 99px;
+}
+
+main .holiday_activity__case__headers {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  font-family: "Montserrat";
+  text-align: center;
+  color: #444444;
+  margin-left: 2px;
+}
+
+main .holiday_activity__case-2 {
+  width: 940px;
+  height: 310px;
+  margin-top: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .holiday_activity__case-2 .picture {
+  width: 300px;
+  height: 310px;
+  background-image: url(./pics/activity_pic1.png);
+}
+
+main .holiday_activity__case-2 .picture__text {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Montserrat";
+  padding-top: 146px;
+  padding-left: 45px;
+}
+
+main .holiday_activity__case-2 .picture-2 {
+  width: 300px;
+  height: 310px;
+  background-image: url(./pics/activity_pic2.png);
+}
+
+main .holiday_activity__case-2 .picture-2__text {
+  width: 275px;
+  height: 33px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Montserrat";
+  margin-top: 146px;
+  margin-left: 31px;
+}
+
+main .holiday_activity__case-2 .picture-3 {
+  width: 300px;
+  height: 310px;
+  background-image: url(./pics/activity_pic3.png);
+}
+
+main .holiday_activity__case-2 .picture-3__text {
+  width: 202px;
+  height: 54px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Montserrat";
+  margin-top: 129px;
+  margin-left: 60px;
+  line-height: 26px;
+}
+
+main .holiday_activity__case-3 {
+  width: 940px;
+  height: 310px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .holiday_activity__case-3 .picture-4 {
+  width: 300px;
+  height: 310px;
+  background-image: url(./pics/activity_pic4.png);
+}
+
+main .holiday_activity__case-3 .picture-4__text {
+  width: 80px;
+  height: 27px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Montserrat";
+  margin-top: 145px;
+  margin-left: 109px;
+}
+
+main .holiday_activity__case-3 .picture-5 {
+  width: 620px;
+  height: 310px;
+  background-image: url(./pics/activity_pic5.png);
+}
+
+main .holiday_activity__case-3 .picture-5__text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  width: 261px;
+  height: 27px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  margin-top: 145px;
+  margin-left: 180px;
+}
+
+main .holiday_activity__case-4 {
+  width: 940px;
+  height: 310px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+main .holiday_activity__case-4 .picture-6 {
+  background-image: url(./pics/activity_pic6.png);
+  width: 620px;
+  height: 310px;
+}
+
+main .holiday_activity__case-4 .picture-6__text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  width: 277px;
+  height: 27px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  margin-top: 145px;
+  margin-left: 172px;
+}
+
+main .holiday_activity__case-4 .picture-7 {
+  width: 300px;
+  height: 310px;
+  background-image: url(./pics/activity_pic7.png);
+}
+
+main .holiday_activity__case-4 .picture-7__text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  width: 114px;
+  height: 27px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  margin-top: 144px;
+  margin-left: 93px;
+}
+
+main .registration-window {
+  width: 482px;
+  height: 158px;
+  margin-top: 92px;
+  margin-left: 229px;
+}
+
+main .registration-window__chapter {
+  width: 400px;
+  height: 32px;
+  color: #444444;
+  margin-top: -3px;
+  margin-left: 62px;
+}
+
+main .registration-window__chapter h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  font-family: "Montserrat";
+}
+
+main .registration-window__text {
+  width: 415px;
+  height: 24px;
+  color: #666666;
+  margin-top: 48px;
+  margin-left: 103px;
+}
+
+main .registration-window__text p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  font-family: "Roboto";
+}
+
+main .registration-window__sign-in {
+  width: 500px;
+  height: 48px;
+  margin-top: 14px;
+  margin-left: -2px;
+}
+
+main .registration-window__sign-in input {
+  width: 299px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #999999;
+  padding-top: 9px;
+  padding-left: 14px;
+  word-spacing: -1.5px;
+}
+
+main .registration-window__sign-in button {
+  width: 172.12px;
+  height: 40px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Montserrat";
+  background: #ff4e50;
+  border-radius: 40px;
+  border: none;
+  padding-left: 15px;
+  margin-left: 5px;
+}
+
+footer {
+  width: 1440px;
+  height: 260px;
+  margin: 100px auto;
+  border-top: 2px solid #ff4e50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .colum-1 {
+  margin-top: 37px;
+  margin-left: 249px;
+  letter-spacing: -0.2px;
+}
+
+footer .colum-1 h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #ff4e50;
+  line-height: 20px;
+}
+
+footer .colum-2 {
+  margin-top: 40px;
+  margin-left: 121px;
+}
+
+footer .colum-2__chapter {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #444444;
+  margin-bottom: 13px;
+}
+
+footer .colum-2__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+footer .colum-2__list a {
+  text-decoration: none;
+  color: #999999;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+footer .colum-3 {
+  margin-top: 40px;
+  margin-left: 127px;
+}
+
+footer .colum-3 h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #444444;
+}
+
+footer .colum-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 38px;
+  margin-left: 288px;
+}
+
+footer .colum-4 span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: "Montserrat";
+  letter-spacing: -0.6px;
+  word-spacing: -0.6px;
+  word-spacing: 1px;
+  color: #cccccc;
+  line-height: 12px;
+  margin-bottom: 7px;
+  margin-left: 1px;
+}
+
+@media screen and (max-width: 1480px) {
+  header {
+    background-image: url(./pics/Background_tablet.png);
+    width: 768px;
+    height: 695px;
+    background-size: cover;
+  }
+  header nav .logo__link {
+    margin-left: 48px;
+  }
+  header nav .button_pack {
+    margin-left: 338px;
+    margin-top: -5px;
+  }
+  header .chapter {
+    width: 470px;
+    height: 126px;
+    color: #ffffff;
+    margin-left: 149px;
+    margin-top: 146px;
+  }
+  header .plot {
+    width: 396px;
+    height: 25px;
+    color: #f7f3f2;
+    margin-left: 186px;
+    margin-top: 28.5px;
+  }
+  header .button_3 {
+    margin-left: 272px;
+  }
+  main {
+    width: 766px;
+    height: 2540px;
+    margin-top: 101px;
+  }
+  main .how-works {
+    width: 759px;
+    height: 461px;
+  }
+  main .how-works__box__head {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #444444;
+    padding-left: 240px;
+    font-family: "Montserrat";
+  }
+  main .how-works__box__content .first-item {
+    background-image: url(./pics/step1.png);
+    width: 236px;
+    height: 400px;
+    margin-left: 10px;
+  }
+  main .how-works__box__content .first-item__button {
+    margin-top: 206px;
+    margin-left: 19px;
+    padding-top: 5px;
+  }
+  main .how-works__box__content .first-item__chapter {
+    line-height: 14px;
+    margin-top: 47px;
+    margin-left: 20px;
+    width: 200px;
+  }
+  main .how-works__box__content .first-item__text {
+    width: 196px;
+    height: 77px;
+    color: #e3e3e3;
+    margin-top: -22px;
+    margin-left: 20px;
+  }
+  main .how-works__box__content .second-item {
+    width: 236px;
+    height: 400px;
+    background-image: url(./pics/step2.png);
+  }
+  main .how-works__box__content .second-item__button {
+    margin-top: 256px;
+    margin-left: 19px;
+    padding-top: 4px;
+    padding-left: 7px;
+  }
+  main .how-works__box__content .second-item__chapter {
+    width: 196px;
+    height: 29px;
+    color: #ffffff;
+    line-height: 14px;
+    margin-top: 16px;
+    margin-left: 19px;
+  }
+  main .how-works__box__content .second-item__text {
+    width: 196px;
+    height: 57px;
+    color: #e3e3e3;
+    margin-top: 9px;
+    margin-left: 19px;
+  }
+  main .how-works__box__content .third-item {
+    width: 236px;
+    height: 400px;
+    background-image: url(./pics/step3.png);
+  }
+  main .how-works__box__content .third-item__button {
+    margin-top: 207px;
+    margin-left: 18px;
+    padding-top: 3px;
+    padding-left: 9px;
+  }
+  main .how-works__box__content .third-item__chapter {
+    line-height: 14px;
+    margin-top: 45px;
+    margin-left: 18px;
+    width: 200px;
+  }
+  main .how-works__box__content .third-item__text {
+    width: 196px;
+    height: 57px;
+    color: #e3e3e3;
+    margin-top: 0px;
+    margin-left: 19px;
+  }
+  main .meating {
+    width: 492px;
+    height: 605px;
+    margin-top: 95px;
+    margin-left: 138px;
+  }
+  main .meating__box {
+    width: 416px;
+    height: 27px;
+    color: #444444;
+    margin-left: 38px;
+    margin-top: -4px;
+  }
+  main .meating__box__head {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  main .meating__box2__article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  main .meating__box2__article .item-1, main .meating__box2__article .item-2 {
+    width: 236px;
+    height: 205px;
+  }
+  main .meating__box2__article .item-1__photo {
+    margin-left: 54px;
+    margin-top: 3px;
+  }
+  main .meating__box2__article .item-1__chapter {
+    margin-left: 63px;
+  }
+  main .meating__box2__article .item-2 {
+    width: 236px;
+    height: 205px;
+  }
+  main .meating__box2__article .item-2__photo {
+    margin-top: 24px;
+    margin-left: 59px;
+  }
+  main .meating__box2__article .item-2__chapter {
+    margin-left: 66px;
+    margin-top: 15px;
+  }
+  main .meating__box2__article .item-2__plot {
+    margin-left: 7px;
+  }
+  main .meating__box2__article1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  main .meating__box2__article1 .item-3, main .meating__box2__article1 .item-4 {
+    width: 236px;
+    height: 224px;
+  }
+  main .meating__box2__article1 .item-3__photo {
+    margin-top: 3px;
+    margin-left: 67px;
+  }
+  main .meating__box2__article1 .item-3__chapter {
+    margin-left: 85px;
+    margin-top: 16px;
+  }
+  main .meating__box2__article1 .item-3__plot {
+    width: 236px;
+    height: 57px;
+    margin-left: 10px;
+  }
+  main .meating__box2__article1 .item-4 {
+    width: 236px;
+    height: 205px;
+  }
+  main .meating__box2__article1 .item-4__photo {
+    margin-top: 3px;
+    margin-left: 68px;
+  }
+  main .meating__box2__article1 .item-4__chapter {
+    margin-left: 59px;
+  }
+  main .meating__box2__article1 .item-4__plot {
+    width: 236px;
+    height: 38px;
+    margin-left: 10px;
+    margin-top: 23px;
+  }
+  main .meating__box3 .button_4 {
+    margin-top: 276px;
+    margin-left: 155px;
+  }
+  main .holiday_activity {
+    width: 765px;
+    height: 1031px;
+  }
+  main .holiday_activity__case__headers {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  main .holiday_activity__case-2 {
+    width: 748px;
+    margin-left: 10px;
+  }
+  main .holiday_activity__case-2 .picture {
+    width: 236px;
+    height: 310px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    background-position-x: -40px;
+  }
+  main .holiday_activity__case-2 .picture__text {
+    padding-top: 115px;
+    padding-left: 30px;
+    width: 206px;
+    height: 54px;
+    line-height: 27px;
+    text-align: center;
+  }
+  main .holiday_activity__case-2 .picture-2 {
+    width: 236px;
+    height: 310px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    background-position-x: -40px;
+  }
+  main .holiday_activity__case-2 .picture-2__text {
+    width: 206px;
+    height: 54px;
+    text-align: center;
+    margin-top: 128px;
+    margin-left: 15px;
+    line-height: 27px;
+  }
+  main .holiday_activity__case-2 .picture-3 {
+    width: 236px;
+    height: 310px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: -20px;
+    border-radius: 4px;
+  }
+  main .holiday_activity__case-2 .picture-3__text {
+    width: 206px;
+    height: 54px;
+    text-align: center;
+    margin-left: 14px;
+  }
+  main .holiday_activity__case-3 {
+    width: 758px;
+    height: 310px;
+  }
+  main .holiday_activity__case-3 .picture-4 {
+    width: 236px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+  }
+  main .holiday_activity__case-3 .picture-4__text {
+    margin-left: 78px;
+  }
+  main .holiday_activity__case-3 .picture-5 {
+    width: 492px;
+    height: 310px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: -71px;
+    border-radius: 4px;
+  }
+  main .holiday_activity__case-3 .picture-5__text {
+    margin-left: 117px;
+  }
+  main .holiday_activity__case-4 {
+    width: 758px;
+    height: 310px;
+  }
+  main .holiday_activity__case-4 .picture-6 {
+    width: 492px;
+    height: 310px;
+    margin-left: 10px;
+  }
+  main .holiday_activity__case-4 .picture-6__text {
+    margin-left: 108px;
+  }
+  main .holiday_activity__case-4 .picture-7 {
+    width: 236px;
+    height: 310px;
+    background-image: url(./pics/activity_tablet_7.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+  main .holiday_activity__case-4 .picture-7__text {
+    margin-left: 61px;
+  }
+  main .registration-window {
+    width: 482px;
+    height: 158px;
+    margin-left: 145px;
+    margin-top: 97px;
+  }
+  main .registration-window__chapter {
+    width: 303px;
+    height: 27px;
+    color: #444444;
+    margin-left: 89px;
+    margin-top: 2px;
+  }
+  main .registration-window__chapter h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  main .registration-window__text {
+    width: 379px;
+  }
+  main .registration-window__sign-in {
+    width: 482px;
+    height: 40px;
+  }
+  main .registration-window__sign-in input {
+    width: 299px;
+    height: 40px;
+    padding-top: 7px;
+  }
+  footer {
+    width: 768px;
+    height: 224px;
+  }
+  footer .colum-1 {
+    margin-left: 39px;
+  }
+  footer .colum-2 {
+    margin-left: 108px;
+  }
+  footer .colum-2__list {
+    width: 114px;
+    height: 156px;
+  }
+  footer .colum-3 {
+    margin-left: 56px;
+  }
+  footer .colum-4 {
+    margin-left: 119px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    width: 320px;
+    height: 512px;
+    background-image: url(./pics/background_mobile.png);
+  }
+  header nav {
+    display: block;
+  }
+  header nav .logo {
+    position: absolute;
+    margin-top: 106px;
+    margin-left: 36px;
+  }
+  header nav .button_pack {
+    margin-left: 56px;
+    margin-top: -23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav .button_pack__button_2 {
+    width: 90px;
+    height: 36px;
+    color: #ffffff;
+    background: none;
+    border-radius: 40px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    margin-top: -5px;
+    margin-left: 2px;
+    padding-top: 4px;
+  }
+  header nav .button_pack_active {
+    border: 2px solid #ffffff;
+  }
+  header nav .button_pack__button_1 {
+    width: 90px;
+    height: 36px;
+    color: #ffffff;
+    margin-top: -2px;
+    padding-left: 17px;
+  }
+  header .chapter {
+    width: 272px;
+    height: 74px;
+    color: #ffffff;
+    margin-left: 24px;
+  }
+  header .chapter__head {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Montserrat";
+    line-height: 37px;
+  }
+  header .plot {
+    width: 279px;
+    height: 49px;
+    color: #f7f3f2;
+    margin-left: 20px;
+    margin-top: 6px;
+    text-align: center;
+  }
+  header .plot__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  header .button_3 {
+    width: 280px;
+    height: 40px;
+    color: #ffffff;
+    margin-left: 21px;
+    margin-top: 14px;
+    padding-top: 5px;
+  }
+  main {
+    width: 320px;
+    height: 3097px;
+    margin-top: 62px;
+  }
+  main .how-works {
+    width: 287px;
+    height: 781px;
+  }
+  main .how-works__box {
+    width: 312px;
+    height: 27px;
+  }
+  main .how-works__box__head {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #444444;
+    padding-left: 16px;
+    padding-top: 3px;
+    font-family: "Montserrat";
+  }
+  main .how-works__box__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 300px;
+    height: 740px;
+    margin-top: 16px;
+    margin-left: 10px;
+  }
+  main .how-works__box__content .first-item {
+    width: 300px;
+    height: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+    background-image: url(./pics/step1_mobile.png);
+  }
+  main .how-works__box__content .first-item__button {
+    margin-top: 63px;
+  }
+  main .how-works__box__content .first-item__text {
+    width: 250px;
+    height: 57px;
+    margin-top: -21px;
+  }
+  main .how-works__box__content .second-item {
+    width: 300px;
+    height: 240px;
+    background-image: url(./pics/step2_mobile.png);
+  }
+  main .how-works__box__content .second-item__button {
+    margin-top: 94px;
+  }
+  main .how-works__box__content .second-item__chapter {
+    width: 212px;
+    height: 29px;
+    margin-top: 31px;
+  }
+  main .how-works__box__content .second-item__text {
+    width: 247px;
+    height: 57px;
+    margin-top: -7px;
+  }
+  main .how-works__box__content .third-item {
+    background-image: url(./pics/step3_mobile.png);
+    width: 300px;
+    height: 240px;
+  }
+  main .how-works__box__content .third-item__button {
+    margin-top: 63px;
+  }
+  main .how-works__box__content .third-item__chapter {
+    margin-top: 47px;
+    margin-left: 20px;
+  }
+  main .how-works__box__content .third-item__text {
+    width: 245px;
+    height: 57px;
+    margin-top: -22px;
+  }
+  main .meating {
+    height: 1050px;
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 36px;
+  }
+  main .meating__box {
+    width: 280px;
+    height: 32px;
+    color: #444444;
+    text-align: center;
+    margin-left: 9px;
+    margin-top: 0px;
+  }
+  main .meating__box__head {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+  }
+  main .meating__box2 {
+    display: block;
+  }
+  main .meating__box2__article {
+    display: block;
+    width: 300px;
+  }
+  main .meating__box2__article .item-1, main .meating__box2__article .item-2 {
+    width: 236px;
+    height: 205px;
+    margin-left: 32px;
+  }
+  main .meating__box2__article .item-1__photo {
+    margin-left: 54px;
+  }
+  main .meating__box2__article .item-1__chapter {
+    margin-left: 62px;
+    margin-top: 7px;
+  }
+  main .meating__box2__article .item-1__plot {
+    margin-top: 22px;
+  }
+  main .meating__box2__article .item-2 {
+    width: 236px;
+    height: 205px;
+    margin-left: 32px;
+    position: absolute;
+    margin-top: 256px;
+  }
+  main .meating__box2__article .item-2__photo {
+    margin-top: 3px;
+  }
+  main .meating__box2__article1 {
+    display: block;
+    width: 300px;
+  }
+  main .meating__box2__article1 .item-3, main .meating__box2__article1 .item-4 {
+    width: 236px;
+    height: 233px;
+    margin-left: 32px;
+    margin-top: -44px;
+  }
+  main .meating__box2__article1 .item-3__photo {
+    margin-left: 57px;
+  }
+  main .meating__box2__article1 .item-3__chapter {
+    margin-left: 73px;
+    margin-top: 15px;
+  }
+  main .meating__box2__article1 .item-3__plot {
+    margin-left: -1px;
+    margin-top: 28px;
+  }
+  main .meating__box2__article1 .item-4 {
+    width: 236px;
+    height: 205px;
+    margin-left: 32px;
+    position: absolute;
+    margin-top: 256px;
+  }
+  main .meating__box2__article1 .item-4__photo {
+    margin-top: -27px;
+    margin-left: 58px;
+  }
+  main .meating__box2__article1 .item-4__chapter {
+    margin-left: 50px;
+  }
+  main .meating__box2__article1 .item-4__plot {
+    margin-left: 1px;
+  }
+  main .meating__box3 .button_4 {
+    width: 280px;
+    height: 40px;
+    color: #ff4e50;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Montserrat";
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 40px;
+    border: 2px solid #ff4e50;
+    background: none;
+    margin-top: 437px;
+    margin-left: 10px;
+    padding-left: 11px;
+    padding-top: 4px;
+  }
+  main .holiday_activity {
+    width: 300px;
+    height: 1054px;
+    margin-top: 18px;
+  }
+  main .holiday_activity__case__headers {
+    width: 280px;
+    height: 54px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    margin-left: 20px;
+    line-height: 27px;
+  }
+  main .holiday_activity__case-2 {
+    width: 300px;
+    height: 382px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin-top: 32px;
+  }
+  main .holiday_activity__case-2 .picture {
+    width: 300px;
+    height: 120px;
+    background-image: url(./pics/activity_pic1_mobile.png);
+    background-position-x: 1px;
+  }
+  main .holiday_activity__case-2 .picture__text {
+    width: 203px;
+    height: 54px;
+    color: #ffffff;
+    padding-top: 1px;
+    padding-left: 1px;
+    margin-left: 48px;
+    margin-top: 19px;
+  }
+  main .holiday_activity__case-2 .picture-2 {
+    width: 300px;
+    height: 120px;
+    background-image: url(./pics/activity_pic2_mobile.png);
+    background-position-x: 1px;
+  }
+  main .holiday_activity__case-2 .picture-2__text {
+    margin-top: 33px;
+    margin-left: 47px;
+  }
+  main .holiday_activity__case-2 .picture-3 {
+    width: 300px;
+    height: 120px;
+    background-image: url(./pics/activity_pic3_mobile.png);
+    background-position-x: 1px;
+  }
+  main .holiday_activity__case-2 .picture-3__text {
+    margin-top: 30px;
+    margin-left: 47px;
+  }
+  main .holiday_activity__case-3 {
+    height: 250px;
+    width: 313px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin-top: 8px;
+  }
+  main .holiday_activity__case-3 .picture-4 {
+    background-image: url(./pics/activity_pic4_mobile.png);
+    width: 300px;
+    height: 120px;
+  }
+  main .holiday_activity__case-3 .picture-4__text {
+    margin-top: 49px;
+    margin-left: 110px;
+  }
+  main .holiday_activity__case-3 .picture-5 {
+    background-image: url(./pics/activity_pic5_mobile.png);
+    width: 300px;
+    height: 120px;
+    background-position-x: -1px;
+    margin-left: 10px;
+  }
+  main .holiday_activity__case-3 .picture-5__text {
+    margin-top: 50px;
+    margin-left: 19px;
+  }
+  main .holiday_activity__case-4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 310px;
+    height: 250px;
+    margin-top: 10px;
+  }
+  main .holiday_activity__case-4 .picture-6 {
+    width: 300px;
+    height: 120px;
+    background-image: url(./pics/active_pic6_mobile.png);
+  }
+  main .holiday_activity__case-4 .picture-6__text {
+    margin-top: 50px;
+    margin-left: 11px;
+  }
+  main .holiday_activity__case-4 .picture-7 {
+    background-image: url(./pics/active_pic7_mobile.png);
+    width: 300px;
+    height: 120px;
+    margin-left: 10px;
+  }
+  main .holiday_activity__case-4 .picture-7__text {
+    margin-top: 50px;
+    margin-left: 94px;
+  }
+  main .registration-window {
+    width: 300px;
+    height: 192px;
+    margin-top: -36px;
+    margin-left: 10px;
+  }
+  main .registration-window__chapter {
+    width: 280px;
+    height: 54px;
+    color: #444444;
+    margin-left: 9px;
+    text-align: center;
+    line-height: 27px;
+  }
+  main .registration-window__chapter h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  main .registration-window__text {
+    width: 285px;
+    height: 24px;
+    color: #666666;
+    margin-left: 14px;
+    margin-top: 19px;
+  }
+  main .registration-window__sign-in {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 280px;
+    height: 90px;
+    margin-top: 6px;
+    margin-left: 11px;
+  }
+  main .registration-window__sign-in input {
+    width: 280px;
+    height: 40px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    padding-top: 7px;
+    padding-left: 12px;
+    word-spacing: 1.5px;
+  }
+  main .registration-window__sign-in button {
+    width: 280px;
+    height: 40px;
+    color: #ffffff;
+    padding-left: 15px;
+    margin-left: -1px;
+    margin-top: 11px;
+  }
+  footer {
+    width: 320px;
+    height: 226px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin-top: -51px;
+  }
+  footer .colum-1 {
+    width: 119px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 101px;
+  }
+  footer .colum-2 {
+    width: 280px;
+    height: 70px;
+    margin-top: 14px;
+    margin-left: 1px;
+  }
+  footer .colum-2__chapter {
+    margin-left: 124px;
+  }
+  footer .colum-2__list {
+    width: 280px;
+    height: 52px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -10px;
+  }
+  footer .colum-2__list .list-link-1 {
+    width: 50px;
+    margin-left: 64px;
+  }
+  footer .colum-2__list .list-link-2 {
+    width: 62px;
+  }
+  footer .colum-2__list .list-link-3 {
+    width: 49px;
+  }
+  footer .colum-2__list .list-link-5 {
+    margin-left: 81px;
+  }
+  footer .colum-2__list .list-link-6 {
+    margin-left: 13px;
+  }
+  footer .colum-3 {
+    margin-top: 7px;
+    margin-left: 128px;
+  }
+  footer .colum-4 {
+    margin-top: 15px;
+    margin-left: 1px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */

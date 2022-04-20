@@ -1,0 +1,1433 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import "base/reset";
+@import "base/variables";
+@import "base/mixin";
+
+header {
+  background-image: url(./pics/Background.png);
+  width: 1440px;
+  height: 700px;
+  margin: 0px auto;
+  nav {
+    display: flex;
+    padding-top: 46px;
+
+    .logo {
+      &__link {
+        color: $main-color;
+        text-decoration: none;
+        font-family: $title-font;
+        font-size: 20px;
+        line-height: 24px;
+        font-style: normal;
+        margin-left: 248px;
+      }
+    }
+    .button_pack {
+      margin-left: 568px;
+      margin-top: -5px;
+
+      &__button_2 {
+        @include button(90px, 36px, $main-color);
+        background: none;
+        border-radius: 40px;
+        font-size: 14px;
+        font-family: $title-font;
+        margin-top: -5px;
+        margin-left: -3px;
+      }
+      &_active {
+        border: 2px solid $main-color;
+      }
+      &__button_1 {
+        @include button(90px, 36px, $main-color);
+        background: none;
+        border-radius: 40px;
+        font-size: 14px;
+        font-family: $title-font;
+        border: none;
+        padding-left: 17px;
+      }
+    }
+  }
+  .chapter {
+    @include chapter(470px, 122px, $main-color);
+    margin-left: 485px;
+    margin-top: 146px;
+
+    &__head {
+      font-size: 52px;
+      text-align: center;
+      font-family: $title-font;
+      line-height: 63px;
+      font-weight: 700;
+      font-style: normal;
+    }
+  }
+  .plot {
+    @include plot(396px, 25px, $plot-color);
+    margin-left: 522px;
+    margin-top: 32.5px;
+    &__text {
+      font-size: 24px;
+      font-family: "Roboto";
+      font-style: normal;
+      text-align: center;
+      line-height: 24px;
+    }
+  }
+  .button_3 {
+    @include button(225px, 40px, $main-color);
+    background-color: $button-color;
+    border-radius: 40px;
+    border: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-left: 608px;
+    margin-top: 33px;
+    padding-top: 5px;
+  }
+}
+
+main {
+  width: 941px;
+  height: 2299px;
+  margin-left: 250px;
+  margin: 92px auto;
+  .how-works {
+    width: 940px;
+    height: 465px;
+    &__box {
+      &__head {
+        @include box_text(normal, 700, 26px);
+        color: #444444;
+        padding-left: 299px;
+        font-family: "Montserrat";
+      }
+      &__content {
+        display: flex;
+        margin-top: 37px;
+        justify-content: space-between;
+
+        .first-item {
+          background-image: url(./pics/step1.png);
+          width: 300px;
+          height: 400px;
+          &__button {
+            @include button(70px, 20px, $main-color);
+            @include button_text(normal, 400, 10px);
+            border-radius: 40px;
+            border: none;
+            background-color: $button-color;
+            font-family: "Montserrat";
+            line-height: 12px;
+            letter-spacing: 2px;
+            margin-top: 219px;
+            margin-left: 25px;
+            padding-top: 7px;
+            padding-left: 9px;
+          }
+          &__chapter {
+            @include chapter(250px, 58px, $main-color);
+            @include box_text(normal, 700, 24px);
+            font-family: "Montserrat";
+            line-height: 26px;
+            margin-top: 23px;
+            margin-left: 25px;
+          }
+          &__text {
+            @include plot(250px, 57px, $plot-text-color);
+            @include box_text(normal, 300, 14px);
+            font-family: "Roboto";
+            display: flex;
+            align-items: flex-end;
+            margin-top: 5px;
+            margin-left: 25px;
+          }
+        }
+        .second-item {
+          width: 300px;
+          height: 400px;
+          background-image: url(./pics/step2.png);
+          &__button {
+            margin-top: 251px;
+            @include button(70px, 20px, $main-color);
+            @include button_text(normal, 400, 10px);
+            border-radius: 40px;
+            border: none;
+            background-color: $button-color;
+            font-family: "Montserrat";
+            line-height: 12px;
+            letter-spacing: 2px;
+            margin-left: 25px;
+            padding-top: 4px;
+            padding-left: 7px;
+          }
+          &__chapter {
+            @include chapter(250px, 58px, $main-color);
+            @include box_text(normal, 700, 24px);
+            font-family: "Montserrat";
+            line-height: 26px;
+            margin-top: 23px;
+            margin-left: 25px;
+          }
+          &__text {
+            @include plot(250px, 57px, $plot-text-color);
+            @include box_text(normal, 300, 14px);
+            font-family: "Roboto";
+            display: flex;
+            align-items: flex-end;
+            margin-top: -27px;
+            margin-left: 25px;
+          }
+        }
+        .third-item {
+          width: 300px;
+          height: 400px;
+          background-image: url(./pics/step3.png);
+          &__button {
+            @include button(70px, 20px, $main-color);
+            @include button_text(normal, 400, 10px);
+            border-radius: 40px;
+            border: none;
+            background-color: $button-color;
+            font-family: "Montserrat";
+            line-height: 12px;
+            letter-spacing: 2px;
+            margin-top: 219px;
+            margin-left: 25px;
+            padding-top: 7px;
+            padding-left: 9px;
+          }
+          &__chapter {
+            @include chapter(250px, 58px, $main-color);
+            @include box_text(normal, 700, 24px);
+            font-family: "Montserrat";
+            line-height: 26px;
+            margin-top: 23px;
+            margin-left: 25px;
+          }
+          &__text {
+            @include plot(250px, 57px, $plot-text-color);
+            @include box_text(normal, 300, 14px);
+            font-family: "Roboto";
+            display: flex;
+            align-items: flex-end;
+            margin-top: 5px;
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+  }
+  .meating {
+    width: 941px;
+    height: 361px;
+
+    margin-top: 95px;
+    &__box {
+      @include chapter(491px, 32px, $chapter-color);
+      margin-left: 225px;
+      margin-top: -7px;
+
+      &__head {
+        @include box_text(normal, 700, 26px);
+        font-family: "Montserrat";
+        line-height: 32px;
+      }
+    }
+    &__box2 {
+      display: flex;
+      &__article {
+        height: 266px;
+        width: 474px;
+        display: flex;
+
+        .item-1 {
+          width: 221px;
+          height: 205px;
+          margin-top: 34px;
+          &__photo {
+            margin-left: 47px;
+          }
+          &__chapter {
+            @include box_text(normal, 700, 14px);
+            font-family: $title-font;
+            line-height: 17px;
+            margin-left: 55px;
+            margin-top: 8px;
+          }
+          &__plot {
+            @include box_text(normal, 300, 14px);
+            text-align: center;
+            font-family: $plot-font;
+            margin-top: 23px;
+            color: $plot_2-color;
+          }
+        }
+        .item-2 {
+          @extend .item-1;
+          &__photo {
+            margin-left: 70px;
+          }
+          &__chapter {
+            @include box_text(normal, 700, 14px);
+            font-family: $title-font;
+            line-height: 17px;
+            margin-left: 77px;
+            margin-top: 17px;
+          }
+          &__plot {
+            @include box_text(normal, 300, 14px);
+            width: 221px;
+            height: 38px;
+            text-align: center;
+            font-family: $plot-font;
+            margin-left: 18px;
+            margin-top: 22px;
+            color: $plot_2-color;
+          }
+        }
+      }
+      &__article1 {
+        height: 266px;
+        width: 474px;
+        display: flex;
+        .item-3 {
+          width: 242px;
+          height: 230px;
+          margin-top: 34px;
+          &__photo {
+            margin-left: 64px;
+          }
+          &__chapter {
+            @include box_text(normal, 700, 14px);
+            font-family: $title-font;
+            line-height: 17px;
+            margin-left: 80px;
+            margin-top: 17px;
+          }
+          &__plot {
+            @include box_text(normal, 300, 14px);
+            width: 221px;
+            height: 57px;
+            text-align: center;
+            font-family: $plot-font;
+            margin-left: 18px;
+            margin-top: 27px;
+            color: $plot_2-color;
+          }
+        }
+        .item-4 {
+          @extend .item-3;
+          &__photo {
+            margin-left: 65px;
+          }
+          &__chapter {
+            @include box_text(normal, 700, 14px);
+            font-family: $title-font;
+            line-height: 17px;
+            margin-left: 56px;
+            margin-top: 17px;
+          }
+          &__plot {
+            @include box_text(normal, 300, 14px);
+            width: 221px;
+            height: 57px;
+            text-align: center;
+            font-family: $plot-font;
+            margin-left: 14px;
+            margin-top: 27px;
+            color: $plot_2-color;
+          }
+        }
+      }
+    }
+    &__box3 {
+      .button_4 {
+        @include button(180px, 40px, $button-color);
+        @include button_text(normal, 700, 14px);
+        font-family: "Montserrat";
+        box-sizing: border-box;
+        border-radius: 40px;
+        border: 2px solid $button-color;
+        background: none;
+        margin-top: 29px;
+        margin-left: 381px;
+        padding-left: 11px;
+      }
+    }
+  }
+  .holiday_activity {
+    width: 940px;
+    height: 1036px;
+    margin-top: 99px;
+    &__case {
+      &__headers {
+        @include box_text(normal, 700, 26px);
+        font-family: "Montserrat";
+        text-align: center;
+        color: $chapter-color;
+        margin-left: 2px;
+      }
+    }
+    &__case-2 {
+      width: 940px;
+      height: 310px;
+      margin-top: 38px;
+      display: flex;
+      justify-content: space-between;
+      .picture {
+        width: 300px;
+        height: 310px;
+        background-image: url(./pics/activity_pic1.png);
+        &__text {
+          color: $main-color;
+          @include box_text(normal, 700, 22px);
+          font-family: "Montserrat";
+          padding-top: 146px;
+          padding-left: 45px;
+        }
+      }
+      .picture-2 {
+        width: 300px;
+        height: 310px;
+        background-image: url(./pics/activity_pic2.png);
+        &__text {
+          @include chapter(275px, 33px, $main-color);
+          @include box_text(normal, 700, 22px);
+          font-family: "Montserrat";
+          margin-top: 146px;
+          margin-left: 31px;
+        }
+      }
+      .picture-3 {
+        width: 300px;
+        height: 310px;
+        background-image: url(./pics/activity_pic3.png);
+        &__text {
+          @include chapter(202px, 54px, $main-color);
+          @include box_text(normal, 700, 22px);
+          font-family: "Montserrat";
+          margin-top: 129px;
+          margin-left: 60px;
+          line-height: 26px;
+        }
+      }
+    }
+    &__case-3 {
+      width: 940px;
+      height: 310px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      .picture-4 {
+        width: 300px;
+        height: 310px;
+        background-image: url(./pics/activity_pic4.png);
+        &__text {
+          @include chapter(80px, 27px, $main-color);
+          @include box_text(normal, 700, 22px);
+          font-family: "Montserrat";
+          margin-top: 145px;
+          margin-left: 109px;
+        }
+      }
+      .picture-5 {
+        width: 620px;
+        height: 310px;
+        background-image: url(./pics/activity_pic5.png);
+        &__text {
+          @include box_text(normal, 700, 22px);
+          @include chapter(261px, 27px, $main-color);
+          font-family: "Montserrat";
+          margin-top: 145px;
+          margin-left: 180px;
+        }
+      }
+    }
+    &__case-4 {
+      width: 940px;
+      height: 310px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      .picture-6 {
+        background-image: url(./pics/activity_pic6.png);
+        width: 620px;
+        height: 310px;
+        &__text {
+          @include box_text(normal, 700, 22px);
+          @include chapter(277px, 27px, $main-color);
+          font-family: "Montserrat";
+          margin-top: 145px;
+          margin-left: 172px;
+        }
+      }
+      .picture-7 {
+        width: 300px;
+        height: 310px;
+        background-image: url(./pics/activity_pic7.png);
+        &__text {
+          @include box_text(normal, 700, 22px);
+          @include chapter(114px, 27px, $main-color);
+          font-family: "Montserrat";
+          margin-top: 144px;
+          margin-left: 93px;
+        }
+      }
+    }
+  }
+  .registration-window {
+    width: 482px;
+    height: 158px;
+    margin-top: 92px;
+    margin-left: 229px;
+    &__chapter {
+      @include chapter(400px, 32px, $chapter-color);
+
+      margin-top: -3px;
+      margin-left: 62px;
+      h1 {
+        @include box_text(normal, 700, 26px);
+        font-family: "Montserrat";
+      }
+    }
+    &__text {
+      @include plot(415px, 24px, $plot_2-color);
+      margin-top: 48px;
+      margin-left: 103px;
+      p {
+        @include box_text(normal, 300, 18px);
+        font-family: "Roboto";
+      }
+    }
+    &__sign-in {
+      width: 500px;
+      height: 48px;
+      margin-top: 14px;
+      margin-left: -2px;
+      input {
+        width: 299px;
+        height: 40px;
+        background: #ffffff;
+        border: 1px solid #d4d4d4;
+        box-sizing: border-box;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+        border-radius: 3px;
+        @include box_text(normal, 300, 15px);
+        font-family: "Roboto";
+        color: #999999;
+        padding-top: 9px;
+        padding-left: 14px;
+        word-spacing: -1.5px;
+      }
+      button {
+        @include button(172.12px, 40px, $main-color);
+        @include button_text(normal, 700, 14px);
+        font-family: "Montserrat";
+        background: #ff4e50;
+        border-radius: 40px;
+        border: none;
+        padding-left: 15px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+footer {
+  width: 1440px;
+  height: 260px;
+  margin: 100px auto;
+  border-top: 2px solid #ff4e50;
+  display: flex;
+  .colum-1 {
+    margin-top: 37px;
+    margin-left: 249px;
+    letter-spacing: -0.2px;
+    h1 {
+      @include footer_text(normal, 400, 16px);
+      font-family: "Montserrat";
+      color: $button-color;
+      line-height: 20px;
+    }
+  }
+  .colum-2 {
+    margin-top: 40px;
+    margin-left: 121px;
+
+    &__chapter {
+      font-family: "Montserrat";
+      @include footer_text(normal, 700, 14px);
+      color: $footer_chapter-color;
+      margin-bottom: 13px;
+    }
+    &__list {
+      display: flex;
+      flex-flow: column;
+      a {
+        text-decoration: none;
+        color: $footer_plot-color;
+        font-family: "Roboto";
+        @include footer_text(normal, 300, 14px);
+        line-height: 26px;
+      }
+    }
+  }
+  .colum-3 {
+    margin-top: 40px;
+    margin-left: 127px;
+
+    h1 {
+      font-family: "Montserrat";
+      @include footer_text(normal, 700, 14px);
+      color: $footer_chapter-color;
+    }
+  }
+  .colum-4 {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    margin-top: 38px;
+    margin-left: 288px;
+    span {
+      @include footer_text(normal, 700, 12px);
+      font-family: "Montserrat";
+      letter-spacing: -0.6px;
+      word-spacing: -0.6px;
+      word-spacing: 1px;
+      color: #cccccc;
+      line-height: 12px;
+      margin-bottom: 7px;
+      margin-left: 1px;
+    }
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  header {
+    background-image: url(./pics/Background_tablet.png);
+    width: 768px;
+    height: 695px;
+    background-size: cover;
+    nav {
+      .logo {
+        &__link {
+          margin-left: 48px;
+        }
+      }
+      .button_pack {
+        margin-left: 338px;
+        margin-top: -5px;
+      }
+    }
+    .chapter {
+      @include chapter(470px, 126px, $main-color);
+      margin-left: 149px;
+      margin-top: 146px;
+    }
+    .plot {
+      @include plot(396px, 25px, $plot-color);
+      margin-left: 186px;
+      margin-top: 28.5px;
+    }
+    .button_3 {
+      margin-left: 272px;
+    }
+  }
+  main {
+    width: 766px;
+    height: 2540px;
+    margin-top: 101px;
+    .how-works {
+      width: 759px;
+      height: 461px;
+      &__box {
+        &__head {
+          @include box_text(normal, 700, 22px);
+          color: #444444;
+          padding-left: 240px;
+          font-family: "Montserrat";
+        }
+        &__content {
+          .first-item {
+            background-image: url(./pics/step1.png);
+            width: 236px;
+            height: 400px;
+            margin-left: 10px;
+            &__button {
+              margin-top: 206px;
+              margin-left: 19px;
+              padding-top: 5px;
+            }
+            &__chapter {
+              line-height: 14px;
+              margin-top: 47px;
+              margin-left: 20px;
+              width: 200px;
+            }
+            &__text {
+              @include plot(196px, 77px, $plot-text-color);
+              margin-top: -22px;
+              margin-left: 20px;
+            }
+          }
+          .second-item {
+            width: 236px;
+            height: 400px;
+            background-image: url(./pics/step2.png);
+            &__button {
+              margin-top: 256px;
+              margin-left: 19px;
+              padding-top: 4px;
+              padding-left: 7px;
+            }
+            &__chapter {
+              @include chapter(196px, 29px, $main-color);
+              line-height: 14px;
+              margin-top: 16px;
+              margin-left: 19px;
+            }
+
+            &__text {
+              @include plot(196px, 57px, $plot-text-color);
+              margin-top: 9px;
+              margin-left: 19px;
+            }
+          }
+          .third-item {
+            width: 236px;
+            height: 400px;
+            background-image: url(./pics/step3.png);
+            &__button {
+              margin-top: 207px;
+              margin-left: 18px;
+              padding-top: 3px;
+              padding-left: 9px;
+            }
+            &__chapter {
+              line-height: 14px;
+              margin-top: 45px;
+              margin-left: 18px;
+              width: 200px;
+            }
+            &__text {
+              @include plot(196px, 57px, $plot-text-color);
+              margin-top: 0px;
+              margin-left: 19px;
+            }
+          }
+        }
+      }
+    }
+    .meating {
+      width: 492px;
+      height: 605px;
+      margin-top: 95px;
+      margin-left: 138px;
+      &__box {
+        @include chapter(416px, 27px, $chapter-color);
+        margin-left: 38px;
+        margin-top: -4px;
+
+        &__head {
+          @include box_text(normal, 700, 22px);
+        }
+      }
+      &__box2 {
+        &__article {
+          flex-flow: column;
+
+          .item-1 {
+            width: 236px;
+            height: 205px;
+            &__photo {
+              margin-left: 54px;
+              margin-top: 3px;
+            }
+            &__chapter {
+              margin-left: 63px;
+            }
+          }
+          .item-2 {
+            width: 236px;
+            height: 205px;
+            &__photo {
+              margin-top: 24px;
+              margin-left: 59px;
+            }
+            &__chapter {
+              margin-left: 66px;
+              margin-top: 15px;
+            }
+            &__plot {
+              margin-left: 7px;
+            }
+          }
+        }
+        &__article1 {
+          flex-flow: column;
+          .item-3 {
+            width: 236px;
+            height: 224px;
+            &__photo {
+              margin-top: 3px;
+              margin-left: 67px;
+            }
+            &__chapter {
+              margin-left: 85px;
+              margin-top: 16px;
+            }
+            &__plot {
+              width: 236px;
+              height: 57px;
+              margin-left: 10px;
+            }
+          }
+          .item-4 {
+            width: 236px;
+            height: 205px;
+            &__photo {
+              margin-top: 3px;
+              margin-left: 68px;
+            }
+            &__chapter {
+              margin-left: 59px;
+            }
+            &__plot {
+              width: 236px;
+              height: 38px;
+              margin-left: 10px;
+              margin-top: 23px;
+            }
+          }
+        }
+      }
+      &__box3 {
+        .button_4 {
+          margin-top: 276px;
+          margin-left: 155px;
+        }
+      }
+    }
+    .holiday_activity {
+      width: 765px;
+      height: 1031px;
+
+      &__case {
+        &__headers {
+          @include box_text(normal, 700, 22px);
+        }
+      }
+      &__case-2 {
+        width: 748px;
+        margin-left: 10px;
+        .picture {
+          width: 236px;
+          height: 310px;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-radius: 4px;
+          background-position-x: -40px;
+          &__text {
+            padding-top: 115px;
+            padding-left: 30px;
+            width: 206px;
+            height: 54px;
+            line-height: 27px;
+            text-align: center;
+          }
+        }
+        .picture-2 {
+          width: 236px;
+          height: 310px;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-radius: 4px;
+          background-position-x: -40px;
+          &__text {
+            width: 206px;
+            height: 54px;
+            text-align: center;
+            margin-top: 128px;
+            margin-left: 15px;
+            line-height: 27px;
+          }
+        }
+        .picture-3 {
+          width: 236px;
+          height: 310px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-position-x: -20px;
+          border-radius: 4px;
+          &__text {
+            width: 206px;
+            height: 54px;
+            text-align: center;
+            margin-left: 14px;
+          }
+        }
+      }
+      &__case-3 {
+        width: 758px;
+        height: 310px;
+        .picture-4 {
+          width: 236px;
+          margin-left: 10px;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-radius: 4px;
+          &__text {
+            margin-left: 78px;
+          }
+        }
+        .picture-5 {
+          width: 492px;
+          height: 310px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-position-x: -71px;
+          border-radius: 4px;
+          &__text {
+            margin-left: 117px;
+          }
+        }
+      }
+      &__case-4 {
+        width: 758px;
+        height: 310px;
+        .picture-6 {
+          width: 492px;
+          height: 310px;
+          margin-left: 10px;
+          &__text {
+            margin-left: 108px;
+          }
+        }
+        .picture-7 {
+          width: 236px;
+          height: 310px;
+          background-image: url(./pics/activity_tablet_7.png);
+          background-repeat: no-repeat;
+          background-position: center left;
+
+          &__text {
+            margin-left: 61px;
+          }
+        }
+      }
+    }
+    .registration-window {
+      width: 482px;
+      height: 158px;
+      margin-left: 145px;
+      margin-top: 97px;
+      &__chapter {
+        @include chapter(303px, 27px, $chapter-color);
+        margin-left: 89px;
+        margin-top: 2px;
+        h1 {
+          @include box_text(normal, 700, 22px);
+        }
+      }
+      &__text {
+        width: 379px;
+      }
+      &__sign-in {
+        width: 482px;
+        height: 40px;
+        input {
+          width: 299px;
+          height: 40px;
+          padding-top: 7px;
+        }
+      }
+    }
+  }
+  footer {
+    width: 768px;
+    height: 224px;
+    .colum-1 {
+      margin-left: 39px;
+    }
+    .colum-2 {
+      margin-left: 108px;
+      &__list {
+        width: 114px;
+        height: 156px;
+      }
+    }
+    .colum-3 {
+      margin-left: 56px;
+    }
+    .colum-4 {
+      margin-left: 119px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    width: 320px;
+    height: 512px;
+    background-image: url(./pics/background_mobile.png);
+
+    nav {
+      display: block;
+
+      .logo {
+        position: absolute;
+        margin-top: 106px;
+        margin-left: 36px;
+      }
+      .button_pack {
+        margin-left: 56px;
+        margin-top: -23px;
+        display: flex;
+
+        &__button_2 {
+          @include button(90px, 36px, $main-color);
+          background: none;
+          border-radius: 40px;
+          font-size: 14px;
+          font-family: $title-font;
+          margin-top: -5px;
+          margin-left: 2px;
+          padding-top: 4px;
+        }
+        &_active {
+          border: 2px solid $main-color;
+        }
+        &__button_1 {
+          @include button(90px, 36px, $main-color);
+          margin-top: -2px;
+          padding-left: 17px;
+        }
+      }
+    }
+    .chapter {
+      @include chapter(272px, 74px, $main-color);
+      margin-left: 24px;
+
+      &__head {
+        font-size: 30px;
+        text-align: center;
+        font-family: $title-font;
+        line-height: 37px;
+      }
+    }
+    .plot {
+      @include plot(279px, 49px, $plot-color);
+      margin-left: 20px;
+      margin-top: 6px;
+      text-align: center;
+      &__text {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+    .button_3 {
+      @include button(280px, 40px, $main-color);
+      margin-left: 21px;
+      margin-top: 14px;
+      padding-top: 5px;
+    }
+  }
+  main {
+    width: 320px;
+    height: 3097px;
+    margin-top: 62px;
+
+    .how-works {
+      width: 287px;
+      height: 781px;
+      &__box {
+        width: 312px;
+        height: 27px;
+        &__head {
+          @include box_text(normal, 700, 22px);
+          color: #444444;
+          padding-left: 16px;
+          padding-top: 3px;
+          font-family: "Montserrat";
+        }
+        &__content {
+          display: flex;
+          flex-flow: column;
+          justify-content: space-between;
+          width: 300px;
+          height: 740px;
+          margin-top: 16px;
+          margin-left: 10px;
+
+          .first-item {
+            width: 300px;
+            height: 240px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-left: 0px;
+            background-image: url(./pics/step1_mobile.png);
+            &__button {
+              margin-top: 63px;
+            }
+            &__text {
+              width: 250px;
+              height: 57px;
+              margin-top: -21px;
+            }
+          }
+          .second-item {
+            width: 300px;
+            height: 240px;
+            background-image: url(./pics/step2_mobile.png);
+            &__button {
+              margin-top: 94px;
+            }
+            &__chapter {
+              width: 212px;
+              height: 29px;
+              margin-top: 31px;
+            }
+            &__text {
+              width: 247px;
+              height: 57px;
+              margin-top: -7px;
+            }
+          }
+          .third-item {
+            background-image: url(./pics/step3_mobile.png);
+            width: 300px;
+            height: 240px;
+            &__button {
+              margin-top: 63px;
+            }
+            &__chapter {
+              margin-top: 47px;
+              margin-left: 20px;
+            }
+            &__text {
+              width: 245px;
+              height: 57px;
+              margin-top: -22px;
+            }
+          }
+        }
+      }
+    }
+    .meating {
+      height: 1050px;
+      width: 300px;
+
+      margin-left: 10px;
+      margin-top: 36px;
+      &__box {
+        @include chapter(280px, 32px, $chapter-color);
+        text-align: center;
+        margin-left: 9px;
+        margin-top: 0px;
+        &__head {
+          @include box_text(normal, 700, 22px);
+          line-height: 27px;
+        }
+      }
+      &__box2 {
+        display: block;
+
+        &__article {
+          display: block;
+          width: 300px;
+
+          .item-1 {
+            width: 236px;
+            height: 205px;
+            margin-left: 32px;
+            &__photo {
+              margin-left: 54px;
+            }
+            &__chapter {
+              margin-left: 62px;
+              margin-top: 7px;
+            }
+            &__plot {
+              margin-top: 22px;
+            }
+          }
+          .item-2 {
+            width: 236px;
+            height: 205px;
+            margin-left: 32px;
+            position: absolute;
+            margin-top: 256px;
+
+            &__photo {
+              margin-top: 3px;
+            }
+          }
+        }
+        &__article1 {
+          display: block;
+          width: 300px;
+          .item-3 {
+            width: 236px;
+            height: 233px;
+            margin-left: 32px;
+            margin-top: -44px;
+
+            &__photo {
+              margin-left: 57px;
+            }
+            &__chapter {
+              margin-left: 73px;
+              margin-top: 15px;
+            }
+            &__plot {
+              margin-left: -1px;
+              margin-top: 28px;
+            }
+          }
+          .item-4 {
+            width: 236px;
+            height: 205px;
+            margin-left: 32px;
+            position: absolute;
+            margin-top: 256px;
+            &__photo {
+              margin-top: -27px;
+              margin-left: 58px;
+            }
+            &__chapter {
+              margin-left: 50px;
+            }
+            &__plot {
+              margin-left: 1px;
+            }
+          }
+        }
+      }
+      &__box3 {
+        .button_4 {
+          @include button(280px, 40px, $button-color);
+          @include button_text(normal, 700, 14px);
+          font-family: "Montserrat";
+          box-sizing: border-box;
+          border-radius: 40px;
+          border: 2px solid $button-color;
+          background: none;
+          margin-top: 437px;
+          margin-left: 10px;
+          padding-left: 11px;
+          padding-top: 4px;
+        }
+      }
+    }
+    .holiday_activity {
+      width: 300px;
+      height: 1054px;
+      margin-top: 18px;
+      &__case {
+        &__headers {
+          width: 280px;
+          height: 54px;
+          @include box_text(normal, 700, 22px);
+          margin-left: 20px;
+          line-height: 27px;
+        }
+      }
+      &__case-2 {
+        width: 300px;
+        height: 382px;
+        flex-flow: column;
+        margin-top: 32px;
+        .picture {
+          width: 300px;
+          height: 120px;
+          background-image: url(./pics/activity_pic1_mobile.png);
+          background-position-x: 1px;
+          &__text {
+            @include chapter(203px, 54px, $main-color);
+
+            padding-top: 1px;
+            padding-left: 1px;
+            margin-left: 48px;
+            margin-top: 19px;
+          }
+        }
+        .picture-2 {
+          width: 300px;
+          height: 120px;
+          background-image: url(./pics/activity_pic2_mobile.png);
+          background-position-x: 1px;
+          &__text {
+            margin-top: 33px;
+            margin-left: 47px;
+          }
+        }
+        .picture-3 {
+          width: 300px;
+          height: 120px;
+          background-image: url(./pics/activity_pic3_mobile.png);
+          background-position-x: 1px;
+          &__text {
+            margin-top: 30px;
+            margin-left: 47px;
+          }
+        }
+      }
+      &__case-3 {
+        height: 250px;
+        width: 313px;
+        flex-flow: column;
+        margin-top: 8px;
+        .picture-4 {
+          background-image: url(./pics/activity_pic4_mobile.png);
+          width: 300px;
+          height: 120px;
+          &__text {
+            margin-top: 49px;
+            margin-left: 110px;
+          }
+        }
+        .picture-5 {
+          background-image: url(./pics/activity_pic5_mobile.png);
+          width: 300px;
+          height: 120px;
+          background-position-x: -1px;
+          margin-left: 10px;
+          &__text {
+            margin-top: 50px;
+            margin-left: 19px;
+          }
+        }
+      }
+      &__case-4 {
+        flex-flow: column;
+        width: 310px;
+        height: 250px;
+        margin-top: 10px;
+        .picture-6 {
+          width: 300px;
+          height: 120px;
+          background-image: url(./pics/active_pic6_mobile.png);
+          &__text {
+            margin-top: 50px;
+            margin-left: 11px;
+          }
+        }
+        .picture-7 {
+          background-image: url(./pics/active_pic7_mobile.png);
+          width: 300px;
+          height: 120px;
+          margin-left: 10px;
+          &__text {
+            margin-top: 50px;
+            margin-left: 94px;
+          }
+        }
+      }
+    }
+    .registration-window {
+      width: 300px;
+      height: 192px;
+      margin-top: -36px;
+      margin-left: 10px;
+      &__chapter {
+        @include chapter(280px, 54px, $chapter-color);
+        margin-left: 9px;
+        text-align: center;
+        line-height: 27px;
+        h1 {
+          @include box_text(normal, 700, 22px);
+        }
+      }
+      &__text {
+        @include plot(285px, 24px, $plot_2-color);
+        margin-left: 14px;
+        margin-top: 19px;
+      }
+      &__sign-in {
+        flex-flow: column;
+        display: flex;
+        width: 280px;
+        height: 90px;
+        margin-top: 6px;
+        margin-left: 11px;
+        input {
+          width: 280px;
+          height: 40px;
+          @include box_text(normal, 300, 14px);
+          padding-top: 7px;
+          padding-left: 12px;
+          word-spacing: 1.5px;
+        }
+        button {
+          @include button(280px, 40px, $main-color);
+          padding-left: 15px;
+          margin-left: -1px;
+          margin-top: 11px;
+        }
+      }
+    }
+  }
+  footer {
+    width: 320px;
+    height: 226px;
+    flex-flow: column;
+    margin-top: -51px;
+    .colum-1 {
+      width: 119px;
+      height: 20px;
+      margin-top: 20px;
+      margin-left: 101px;
+    }
+    .colum-2 {
+      width: 280px;
+      height: 70px;
+      margin-top: 14px;
+      margin-left: 1px;
+      &__chapter {
+        margin-left: 124px;
+      }
+
+      &__list {
+        width: 280px;
+        height: 52px;
+
+        flex-flow: row wrap;
+        display: flex;
+        margin-top: -10px;
+        .list-link-1 {
+          width: 50px;
+          margin-left: 64px;
+        }
+        .list-link-2 {
+          width: 62px;
+        }
+        .list-link-3 {
+          width: 49px;
+        }
+        .list-link-5 {
+          margin-left: 81px;
+        }
+        .list-link-6 {
+          margin-left: 13px;
+        }
+      }
+    }
+    .colum-3 {
+      margin-top: 7px;
+      margin-left: 128px;
+    }
+    .colum-4 {
+      margin-top: 15px;
+      margin-left: 1px;
+      align-items: center;
+    }
+  }
+}

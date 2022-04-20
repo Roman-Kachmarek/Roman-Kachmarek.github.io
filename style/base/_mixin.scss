@@ -1,0 +1,39 @@
+@mixin button($w, $h, $color) {
+  width: $w;
+  height: $h;
+  color: $color;
+}
+
+@mixin chapter($w, $h, $color) {
+  width: $w;
+  height: $h;
+  color: $color;
+}
+
+@mixin plot($w, $h, $color) {
+  width: $w;
+  height: $h;
+  color: $color;
+}
+
+@mixin main($w, $h, $color) {
+  width: $w;
+  height: $h;
+  background-color: $color;
+}
+
+@mixin box_text($fs, $fw, $fz) {
+  font-style: $fs;
+  font-weight: $fw;
+  font-size: $fz;
+}
+@mixin button_text($fs, $fw, $fz) {
+  font-style: $fs;
+  font-weight: $fw;
+  font-size: $fz;
+}
+@mixin footer_text($fs, $fw, $fz) {
+  font-style: $fs;
+  font-weight: $fw;
+  font-size: $fz;
+}
